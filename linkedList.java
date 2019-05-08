@@ -1,13 +1,17 @@
 class Main {
   public static void main(String[] args) {
     
+    //creating a Linked linkedlist obj with empty constructor
     LinkedList obj = new LinkedList();
+    //the linkedlist head will be a new node
     obj.head = new node();
     node temp = new node();
     node a = new node(3.5);
     node b = new node(4.5);
     node d = new node(9.9);
     obj.head = a;
+    //connecting nodes to the next node using .next 
+    
     a.next = b;
     b.next = d;
 
