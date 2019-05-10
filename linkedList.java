@@ -42,17 +42,23 @@ System.out.println("Printing using while Loop");
 
   class node {
   
-  double value;
+  int value;
   node next;
   public node(){
     this.value = 0;
     next = null;
   }
-  public node(double value){
+  public node(int value){
     this.value = value;
     next = null;
   }
 }
 class LinkedList{
   node head;
+  void insertBeginning(int x){
+    node newNode = new Node(x);
+    newNode.next = head;
+    head = newNode;
+  }
+  
 }
