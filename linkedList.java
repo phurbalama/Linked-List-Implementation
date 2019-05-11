@@ -60,5 +60,14 @@ class LinkedList{
     newNode.next = head;
     head = newNode;
   }
+  //push to the last element in the linkedlist
+  void push(int x){
+    node temp = head;
+    while(temp!= null){
+      
+      temp = temp.next;
+    }
+    node newNode = new node(x);
+    temp.next = newNode;
   
 }
